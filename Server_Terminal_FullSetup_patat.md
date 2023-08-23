@@ -1,4 +1,7 @@
 ---
+title: "Server_Terminal_FullSetup"
+author: "ShellSense"
+date: "26.08.2023"
 theme:
   codeBlock:
     background: "brightBlack"
