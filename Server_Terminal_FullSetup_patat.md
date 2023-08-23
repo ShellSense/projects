@@ -21,6 +21,7 @@ transitions: true
 ## Vollausgestattetes Arbeitsumfeld auf dem Ubuntu Server 20.04 LTS
 
 ---
+
 # Inhaltsverzeichnis
 
 ## 1.0 Vorbereitung
@@ -44,7 +45,7 @@ transitions: true
 ## 6.0 Abschluss
   * 6.1 Weiterführende Ressourcen
   * 6.2 Fazit/Zusammenfassung
-  * 
+
 ---
 
 # 1.0 Vorbereitung
@@ -60,7 +61,6 @@ transitions: true
 > "In der Einfachheit liegt die wahre Komplexität."
 > - Albert Einstein
 
-
 ---
 
 # 1.2 | Vorbereitung | Voraussetzungen
@@ -75,12 +75,6 @@ transitions: true
 # 1.3 | Vorbereitung | Installation
 
 Live-Demo einiger Basisbefehle und -funktionen.
-
-Folge ShellSense auf:
-- [](https://www.twitch.tv/ShellSense)
-- [](https://www.youtube.com/@ShellSense)
-- [](https://odysee.com/@ShellSense)
-- [](https://github.com/ShellSense)
 
 ---
 
@@ -100,7 +94,7 @@ Einblick in einen typischen Workflow eines Terminal-Nutzers.
 
 # 2.2 | Durchführung | Anwendung
 
-## Morgen: Der produktive Start des Tages
+## Der produktive Start des Tages
 
 - **E-Mails abrufen**: Verwendung von Mutt oder einer anderen Terminal-E-Mail-Anwendung
 - **Kalenderüberprüfung**: Terminal-basierte Kalender-Apps wie `calcurse`
@@ -112,21 +106,15 @@ Einblick in einen typischen Workflow eines Terminal-Nutzers.
 
 Live-Demo der Arbeit mit den Terminal-Tools.
 
-Folge ShellSense auf:
-- [Twitch](https://www.twitch.tv/ShellSense)
-- [YouTube](https://www.youtube.com/@ShellSense)
-- [Odysee](https://odysee.com/@ShellSense)
-- [GitHub](https://github.com/ShellSense)
-
-
 ---
 
 # 3.0 Optimierung (Teaser: Backup)
 
 
-## 3.1 | Optimierung | Hardening
-## 3.2 | Optimierung | Fehlerbehebungen
-## 3.3 | Optimierung | Automatisierung
+- 3.1 | Optimierung | Hardening
+- 3.2 | Optimierung | Fehlerbehebungen
+- 3.3 | Optimierung | Automatisierung
+
 ---
 
 # 4.0 Zwischenstand
@@ -135,11 +123,11 @@ Folge ShellSense auf:
 
 # 4.1 Zwischenstand | Fazit
 
-Was haben wir heute gelernt?
-- Wie komme ich zu diesen Informationen?
+- Wie komme ich an diese Informationen?
   * apropos `stichwort`
   * Online-Suche
   * Tutorials
+  
 - Wie lerne ich Befehlen / Tools kennen?
   * manpages
   * Projekte
@@ -173,12 +161,6 @@ Was haben wir heute gelernt?
 # **Bascis: Fragen & Antworten**
 
 Jetzt ist die Zeit für Fragen aus dem Chat!
-
-Folge ShellSense auf:
-- [Twitch](https://www.twitch.tv/ShellSense)
-- [YouTube](https://www.youtube.com/@ShellSense)
-- [Odysee](https://odysee.com/@ShellSense)
-- [GitHub](https://github.com/ShellSense)
 
 ---
 
@@ -235,18 +217,7 @@ Folge ShellSense auf:
 
 Live-Demo von Optimierungstechniken und -Tools.
 
-Folge ShellSense auf:
-- [Twitch](https://www.twitch.tv/ShellSense)
-- [YouTube](https://www.youtube.com/@ShellSense)
-- [Odysee](https://odysee.com/@ShellSense)
-- [GitHub](https://github.com/ShellSense)
-
 ---
-
-# **Bascis: Fragen & Antworten**
-
-Jetzt ist die Zeit für Fragen aus dem Chat!
-
 
 # Danke für's Zuschauen!
 
