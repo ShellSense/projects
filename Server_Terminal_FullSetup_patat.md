@@ -18,42 +18,74 @@ transitions: true
 ## Vollausgestattetes Arbeitsumfeld auf dem Ubuntu Server 20.04 LTS
 
 ---
+# Inhaltsverzeichnis
 
-# Einleitung
+## 1.0 Vorbereitung
+  * 1.1 Einleitung
+  * 1.2 Voraussetzungen
+  * 1.3 Installation
+## 2.0 Durchführung
+  * 2.1 Konfiguration
+  * 2.2 Anwendung
+### 3.0 Optimierung (Teaser)
+  * 3.1 Hardening
+  * 3.2 Fehlerbehebungen
+  * 3.3 Automatisierung
+### 4.0 Zwischenstand
+  * 4.1 Weiterführende Ressourcen
+  * 4.2 Fazit/Zusammenfassung
+## 5.0 Optimierung (Vertiefung)
+  * 5.1 Hardening
+  * 5.2 Fehlerbehebungen
+  * 5.3 Automatisierung
+## 6.0 Abschluss
+  * 6.1 Weiterführende Ressourcen
+  * 6.2 Fazit/Zusammenfassung
+  * 
+---
 
-Warum die Shell? Einige beeindruckende Möglichkeiten und Vorteile gegenüber herkömmlichen GUIs.
-
-> "In der Einfachheit liegt die wahre Komplexität." - Albert Einstein
+# 1.0 Vorbereitung
 
 ---
 
-# Basiskonzepte
+# 1.1 | Vorbereitung | Einleitung
 
 - *Was ist die Shell?*
 - *Grundlegende Befehle und ihre Anwendung*
 
----
 
-# Praxis
+> "In der Einfachheit liegt die wahre Komplexität."
+> - Albert Einstein
 
-Live-Demo einiger Basisbefehle und -funktionen.
-
-Folge ShellSense auf:
-- [Twitch](https://www.twitch.tv/ShellSense)
-- [YouTube](https://www.youtube.com/@ShellSense)
-- [Odysee](https://odysee.com/@ShellSense)
-- [GitHub](https://github.com/ShellSense)
 
 ---
 
-# Vorbereitung
+# 1.2 | Vorbereitung | Voraussetzungen
+
 
 * Auswahl des richtigen Systems: **Ubuntu Server 20.04 LTS**
+  
 * Erste Schritte nach der Installation
 
 ---
 
-# Durchführung - Ein typischer Tag
+# 1.3 | Vorbereitung | Installation
+
+Live-Demo einiger Basisbefehle und -funktionen.
+
+Folge ShellSense auf:
+- [](https://www.twitch.tv/ShellSense)
+- [](https://www.youtube.com/@ShellSense)
+- [](https://odysee.com/@ShellSense)
+- [](https://github.com/ShellSense)
+
+---
+
+# 2.0 Durchführung
+
+---
+
+# 2.1 | Durchführung | Konfiguration
 
 Einblick in einen typischen Workflow eines Terminal-Nutzers.
 
@@ -63,23 +95,13 @@ Einblick in einen typischen Workflow eines Terminal-Nutzers.
 
 ---
 
-# Arbeit - Ein typischer Tag
+# 2.2 | Durchführung | Anwendung
 
-## Morgen: Start des Tages
+## Morgen: Der produktive Start des Tages
 
 - **E-Mails abrufen**: Verwendung von Mutt oder einer anderen Terminal-E-Mail-Anwendung
 - **Kalenderüberprüfung**: Terminal-basierte Kalender-Apps wie `calcurse`
 - **To-Do-Liste**: `taskwarrior` für die Tagesplanung
-
----
-
-## Arbeit: Der produktive Teil
-
-- **Scripting**: Erstellung von Shell-Skripten zur Automatisierung von Routineaufgaben
-- **Datenmanagement**: Verwendung von `awk`, `sed`, `grep` für Datenmanipulation
-- **Versionierung**: `git` für Code-Versionierung und Kollaboration
-- **Monitoring**: Überwachung von Systemressourcen mit `htop` oder `glances`
-- **Remote-Zugriff**: SSH für Remote-Arbeit und -Management
 
 ---
 
@@ -96,22 +118,52 @@ Folge ShellSense auf:
 
 ---
 
-# Optimierung
+# 3.0 Optimierung (Teaser: Backup)
 
-Für diejenigen, die tiefer eintauchen möchten:
 
-- Sicherheit und Hardening
-- Fehlerbehebung
-- Automatisierung
+## 3.1 | Optimierung | Hardening
+## 3.2 | Optimierung | Fehlerbehebungen
+## 3.3 | Optimierung | Automatisierung
+---
+
+# 4.0 Zwischenstand
 
 ---
 
-# Abschluss und Weiterführende Ressourcen
+# 4.1 Zwischenstand | Fazit
 
-Was haben wir heute gelernt? Und wie können wir weitermachen?
+Was haben wir heute gelernt?
+- Wie komme ich zu diesen Informationen?
+  * apropos `stichwort`
+  * Online-Suche
+  * Tutorials
+- Wie lerne ich Befehlen / Tools kennen?
+  * manpages
+  * Projekte
 
-- Wiederholung der wichtigsten Punkte
-- Links zu Tutorials, Dokumentationen und Community-Foren
+---
+
+4.2 Zwischenstand | weiterführende Ressourcen
+
+- **Allgemeine Ressourcen und Tutorials**
+  - [DigitalOcean's Community Tutorials](https://www.digitalocean.com/community/tutorials)
+  - [Linuxize Tutorials](https://linuxize.com/)
+  - [Ubuntu Server Guide](https://ubuntu.com/server/docs)
+
+- **Community-Unterstützung und Foren**
+  - [Stack Overflow](https://stackoverflow.com/)
+  - [Ubuntu Forums](https://ubuntuforums.org/)
+  
+- **Online-Kurse und Bildungsplattformen**
+  - [Linux Academy](https://linuxacademy.com/)
+  - [Udemy Linux Kurse](https://www.udemy.com/courses/search/?q=linux)
+  
+- **Bücher und Literatur**
+  - [Linux Command Line and Shell Scripting Bible](https://www.amazon.com/Linux-Command-Shell-Scripting-Bible/dp/111898384X)
+  - [How Linux Works](https://www.amazon.com/How-Linux-Works-2nd-Superuser/dp/1593275676)
+
+- **Werkzeuge und Dokumentation**
+  - [Manpages Ubuntu](https://manpages.ubuntu.com/)
 
 ---
 
@@ -127,29 +179,52 @@ Folge ShellSense auf:
 
 ---
 
-# Vertiefung: Optimierung
-
-## Sicherheit und Hardening
-
-- **Firewall-Management**: Verwendung von `ufw` zur Steuerung der Firewall
-- **Benutzersicherheit**: Minimierung von Root-Zugang, Verwendung von `sudo`
-- **Systemüberwachung**: Auditd zur Überwachung von Systemaktivitäten
+# 5.0 | Optimierung
 
 ---
 
-## Fehlerbehebung
+# 5.0 | Optimierung | Hardening
 
-- **Log-Dateien**: Verständnis und Überwachung von Systemlogs mit `journalctl`
-- **Prozessmanagement**: Troubleshooting mit `ps`, `top`, `kill` etc.
-- **Systemwiederherstellung**: Snapshots und Backups
+### **Benutzersicherheit**
+- Erstellung und Verwaltung von Benutzerkonten.
+- Sicherstellen, dass der Root-Zugang minimiert und `sudo` verwendet wird.
+
+### **Firewall-Management mit `ufw`**
+- Aktivieren und Konfigurieren der Firewall.
+- Einstellen von Zugriffsregeln, z.B. für SSH.
+
+### **Systemüberwachung**
+- Einsatz von `auditd` zur Protokollierung von Systemaktivitäten.
+- Anzeigen und Filtern von Systemlogs mit `journalctl`.
+- Überwachung spezifischer Dienste und Ereignisse.
 
 ---
 
-## Automatisierung
+# 5.0 | Optimierung | Fehlerbehebung
 
-- **Cron Jobs**: Planung regelmäßiger Aufgaben mit `cron`
-- **Shell-Skripte**: Erstellung von Skripten zur Automatisierung komplexer Workflows
-- **Infrastructure as Code**: Verwendung von Tools wie `Ansible` für skalierbare Automatisierung
+### **Backup und Systemwiederherstellung**
+- Erstellen eines Skripts zur Sicherung wichtiger Dateien mit `rsync`.
+- Verwendung von Snapshots zur Datenwiederherstellung.
+
+### **Log-Dateien**
+- Verständnis und Überwachung von Systemlogs.
+- Analyse kritischer Ereignisse und Vorfälle.
+
+### **Prozessmanagement**
+- Troubleshooting mit Tools wie `ps`, `top`, `kill` etc.
+- Überwachung und Steuerung aktiver Systemprozesse.
+
+---
+
+# 5.0 | Optimierung | Automatisierung
+
+### **Cron Jobs und Shell-Skripte**
+- Planung regelmäßiger Aufgaben mit `cron`.
+- Erstellung von Skripten zur Automatisierung komplexer Workflows.
+
+### **Infrastructure as Code mit `Ansible`**
+- Einrichten eines Ansible-Playbooks.
+- Automatisches Verteilen und Ausführen von Skripten und Befehlen auf Remote-Servern.
 
 ---
 
