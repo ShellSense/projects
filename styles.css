@@ -8,28 +8,42 @@ body {
 header, footer {
     text-align: center;
     margin-bottom: 20px;
+    background-color: #2e2e2e; /* Dunklerer Hintergrund für Header und Footer */
+    padding: 10px;
 }
 
 header h1 {
     margin-bottom: 10px;
-    color: #f0f0f0; /* Fast Weiß für den Header-Text */
+    color: #00ff00; /* Grün für den Header-Text */
 }
 
-nav button {
+nav {
+    background-color: #333; /* Dunkleres Grau für die Navigation */
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #00ff00; /* Grün für Links in der Navigation */
     margin-right: 10px;
-    background-color: #2e2e2e; /* Etwas helleres Grau für Buttons */
-    border: 1px solid #555;
-    color: #e0e0e0;
-    padding: 5px 10px;
-}
-
-nav button a {
-    color: #e0e0e0;
-}
-
-a {
     text-decoration: none;
-    color: #e0e0e0;
+    padding: 5px 10px;
+    border: 1px solid #00ff00; /* Grüne Umrandung */
+}
+
+nav a:hover {
+    background-color: #444; /* Helleres Grau bei Hover */
+}
+
+.container {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2, h5 {
+    color: #00ff00; /* Grün für Überschriften */
 }
 
 hr {
@@ -46,21 +60,19 @@ li {
     margin: 10px 0;
 }
 
-footer div button {
-    margin: 5px;
-    background-color: #2e2e2e;
-    border: 1px solid #555;
-    color: #e0e0e0;
-    padding: 5px 10px;
+footer a {
+    color: #00ff00;
+    text-decoration: none;
+    margin: 0 5px;
 }
 
-footer div button a {
-    color: #e0e0e0;
+footer a:hover {
+    text-decoration: underline;
 }
 
 code {
     display: block;
-    background-color: #2e2e2e;
+    background-color: #333; /* Hintergrundfarbe für Code-Blöcke */
     color: #00ff00; /* Grün für den Text */
     padding: 10px;
     margin: 10px 0;
