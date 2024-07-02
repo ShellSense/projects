@@ -1,7 +1,7 @@
 body {
     font-family: "Courier New", Courier, monospace;
-    background-color: black;
-    color: white;
+    background-color: #1c1c1c; /* Dunkles Grau für den Hintergrund */
+    color: #e0e0e0; /* Hellgrau für den Text */
     margin: 20px;
 }
 
@@ -12,28 +12,28 @@ header, footer {
 
 header h1 {
     margin-bottom: 10px;
-    color: #00ff00; /* grüne Akzentfarbe */
+    color: #f0f0f0; /* Fast Weiß für den Header-Text */
 }
 
 nav button {
     margin-right: 10px;
-    background-color: black;
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    background-color: #2e2e2e; /* Etwas helleres Grau für Buttons */
+    border: 1px solid #555;
+    color: #e0e0e0;
     padding: 5px 10px;
 }
 
 nav button a {
-    color: #00ff00;
+    color: #e0e0e0;
 }
 
 a {
     text-decoration: none;
-    color: #00ff00;
+    color: #e0e0e0;
 }
 
 hr {
-    border: 1px solid #00ff00;
+    border: 1px solid #555; /* Mittelgrau für horizontale Linien */
     margin: 20px 0;
 }
 
@@ -48,12 +48,22 @@ li {
 
 footer div button {
     margin: 5px;
-    background-color: black;
-    border: 1px solid #00ff00;
-    color: #00ff00;
+    background-color: #2e2e2e;
+    border: 1px solid #555;
+    color: #e0e0e0;
     padding: 5px 10px;
 }
 
 footer div button a {
-    color: #00ff00;
+    color: #e0e0e0;
+}
+
+code {
+    display: block;
+    background-color: #2e2e2e;
+    color: #00ff00; /* Grün für den Text */
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #00ff00;
+    overflow-x: auto;
 }
