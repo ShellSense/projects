@@ -21,14 +21,14 @@ nav {
     padding: 0.5rem;
 }
 
-nav a {
+nav a, nav button a {
     color: #fff;
     margin: 0 1rem;
     text-decoration: none;
     padding: 0.5rem;
 }
 
-nav a:hover {
+nav a:hover, nav button a:hover {
     background: #555;
     border-radius: 4px;
 }
@@ -70,6 +70,28 @@ hr {
     border: none;
     border-bottom: 1px solid #ddd;
     margin: 1.5rem 0;
+}
+
+button {
+    background-color: #444;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: underline;
 }
 
 code {
