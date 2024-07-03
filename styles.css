@@ -103,11 +103,14 @@ button {
     border-radius: 4px;
 }
 
-button a {
-    color: #fff;
-    text-decoration: none;
+
+a {
+    color: red;
 }
 
+a:visited {
+    color: green;
+}
 button a:hover {
     text-decoration: underline;
 }
