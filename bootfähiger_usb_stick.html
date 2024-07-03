@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erstellung eines bootfähigen USB-Sticks unter Linux</title>
+    <title>Erstellung eines bootfähigen USB-Sticks unter <a href="linux.html">Linux</a></title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="header-container">
-            <h1>Erstellung eines bootfähigen USB-Sticks unter Linux</h1>
+            <h1>Erstellung eines bootfähigen USB-Sticks unter <a href="linux.html">Linux</a></h1>
         </div>
         <nav>
             <button><a href="index.html">Übersicht</a></button>
@@ -20,32 +20,62 @@
     <main class="container">
         <section>
             <h2>Einführung</h2>
-            <p>Diese Anleitung beschreibt, wie man einen bootfähigen USB-Stick unter Linux mit minimalistischen Werkzeugen erstellt.</p>
+            <p>Diese Anleitung beschreibt, wie man einen bootfähigen USB-Stick unter <a href="linux.html">Linux</a> mit minimalistischen Werkzeugen erstellt.</p>
         </section>
         
         <section>
             <h2>Schritt 1: USB-Stick einstecken und identifizieren</h2>
-            <p>Stecke den USB-Stick ein und identifiziere ihn mit dem Befehl <code>lsblk</code> oder <code>fdisk -l</code>. Notiere die Gerätename, z.B. <code>/dev/sdX</code>.</p>
+            <p>Stecke den USB-Stick ein und identifiziere ihn mit dem Befehl <code><a href="lsblk.html">lsblk</a></code> oder <code><a href="fdisk-l.html">fdisk -l</a></code>. Notiere die Gerätename, z.B. <code><a href="/dev/sdX.html">/dev/sdX</a></code>.</p>
         </section>
         
         <section>
-            <h2>Schritt 2: USB-Stick formatieren</h2>
-            <p>Formatiere den USB-Stick mit dem Befehl <code><a href="mkfs.html">mkfs</a> -t vfat /dev/sdX1</a></code>. Stelle sicher, dass keine wichtigen Daten auf dem USB-Stick sind, da dieser Schritt alle Daten löscht.</p>
+            <h2>Schritt 2: USB-Stick <a href="formatieren.html">formatieren</a></h2>
+            <p>Formatiere den USB-Stick mit dem Befehl <code><a href="mkfs.html">mkfs</a> -t vfat <a href="/dev/sdX.html">/dev/sdX</a>1</code>. Stelle sicher, dass keine wichtigen Daten auf dem USB-Stick sind, da dieser Schritt alle Daten löscht.</p>
         </section>
         
         <section>
             <h2>Schritt 3: ISO-Image auf den USB-Stick schreiben</h2>
-            <p>Schreibe das <a href="iso-image.html">ISO-Image</a> auf den USB-Stick mit dem Befehl <code><a href="dd.html">dd</a> if=pfad/zur/iso-datei of=/dev/sdX bs=4M status=progress</code>. Ersetze <code>pfad/zur/iso-datei</code> durch den Pfad zum ISO-Image und <code>/dev/sdX</code> durch den Gerätename des USB-Sticks.</p>
+            <p>Schreibe das <a href="iso-image.html">ISO-Image</a> auf den USB-Stick mit dem Befehl <code><a href="dd.html">dd</a> if=pfad/zur/iso-datei of=<a href="/dev/sdX.html">/dev/sdX</a> bs=4M status=progress</code>. Ersetze <code>pfad/zur/iso-datei</code> durch den Pfad zum ISO-Image und <code><a href="/dev/sdX.html">/dev/sdX</a></code> durch den Gerätename des USB-Sticks.</p>
         </section>
         
         <section>
             <h2>Schritt 4: Fertigstellung und Überprüfung</h2>
-            <p>Sobald der <a href="dd.html">dd</a>-Prozess abgeschlossen ist, sichere das Schreiben der Daten mit dem Befehl <code>sync</code>. Entferne den USB-Stick sicher mit <code>umount /dev/sdX</code>.</p>
+            <p>Sobald der <a href="dd.html">dd</a>-Prozess abgeschlossen ist, sichere das Schreiben der Daten mit dem Befehl <code><a href="sync.html">sync</a></code>. Entferne den USB-Stick sicher mit <code><a href="umount.html">umount</a> <a href="/dev/sdX.html">/dev/sdX</a></code>.</p>
+        </section>
+        
+        <section>
+            <h2>Risiken und häufige Fehler</h2>
+            <p>Beim Erstellen eines bootfähigen USB-Sticks können folgende Risiken und häufige Fehler auftreten:</p>
+            <ul>
+                <li>Verwendung des falschen Geräts: Stelle sicher, dass du das richtige Gerät ausgewählt hast, um versehentliches Löschen wichtiger Daten zu vermeiden.</li>
+                <li>Unzureichende Berechtigungen: Führe die Befehle als <a href="root.html">root</a> oder mit <a href="sudo.html">sudo</a> aus, um Berechtigungsprobleme zu vermeiden.</li>
+                <li>Fehlerhaftes <a href="iso-image.html">ISO-Image</a>: Vergewissere dich, dass das ISO-Image nicht beschädigt ist, indem du die <a href="checksum.html">Checksumme</a> überprüfst.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Überprüfung des USB-Sticks</h2>
+            <p>Um zu überprüfen, ob der erstellte bootfähige USB-Stick funktioniert, folge diesen Schritten:</p>
+            <ul>
+                <li>Stecke den USB-Stick in einen Computer und starte diesen neu.</li>
+                <li>Ändere die Boot-Reihenfolge im <a href="bios.html">BIOS</a> oder <a href="uefi.html">UEFI</a>, sodass der USB-Stick als erstes Boot-Gerät ausgewählt ist.</li>
+                <li>Stelle sicher, dass das <a href="live-system.html">Live-System</a> oder das <a href="betriebssystem.html">Betriebssystem</a> vom USB-Stick gestartet wird.</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Alternative Tools</h2>
+            <p>Es gibt verschiedene Tools, um einen bootfähigen USB-Stick zu erstellen, darunter:</p>
+            <ul>
+                <li><a href="unetbootin.html">UNetbootin</a> (Bootfähige USB-Sticks erstellen)</li>
+                <li><a href="rufus.html">Rufus</a> (Erstellen bootfähiger USB-Laufwerke)</li>
+                <li><a href="etcher.html">Etcher</a> (Flashen von OS-Images auf USB-Laufwerke und SD-Karten)</li>
+            </ul>
         </section>
         
         <section>
             <h2>Zusammenfassung</h2>
-            <p>Mit diesen Schritten wurde erfolgreich ein bootfähiger USB-Stick unter Linux erstellt. Dieser kann nun verwendet werden, um ein Betriebssystem zu installieren oder ein Live-System zu starten.</p>
+            <p>Mit diesen Schritten wurde erfolgreich ein bootfähiger USB-Stick unter <a href="linux.html">Linux</a> erstellt. Dieser kann nun verwendet werden, um ein <a href="betriebssystem.html">Betriebssystem</a> zu installieren oder ein <a href="live-system.html">Live-System</a> zu starten.</p>
         </section>
     </main>
 
