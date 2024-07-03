@@ -5,13 +5,31 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-size: 16px;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 1rem 0;
+    position: relative;
+    height: 100px;
+}
+
+.header-container {
     text-align: center;
+}
+
+.path-container {
+    text-align: left;
+    padding: 10px;
+}
+
+.title {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1.5rem;
 }
 
 nav {
@@ -97,10 +115,31 @@ button a:hover {
 code {
     display: block;
     background-color: #000;
-    color: #00ff00; /* Grün für den Text */
+    color: #00ff00;
     padding: 10px;
     margin: 10px 0;
     border-left: 4px solid #00ff00;
     overflow-x: auto;
-    font-family: "Courier New", Courier, monospace; /* Monospace-Schriftart für Codeblöcke */
+    font-family: "Courier New", Courier, monospace;
+    font-size: 10px
+}
+
+/* Responsive Design Anpassungen */
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    nav a, nav button a {
+        margin: 0 0.5rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    footer div {
+        flex-direction: column;
+    }
 }
