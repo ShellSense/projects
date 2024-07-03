@@ -121,6 +121,7 @@ code {
     border-left: 4px solid #00ff00;
     overflow-x: auto;
     font-family: "Courier New", Courier, monospace;
+    font-size: 10px
 }
 
 /* Responsive Design Anpassungen */
