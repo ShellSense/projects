@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    font-size: 16px;
 }
 
 header {
@@ -120,4 +121,24 @@ code {
     border-left: 4px solid #00ff00;
     overflow-x: auto;
     font-family: "Courier New", Courier, monospace;
+}
+
+/* Responsive Design Anpassungen */
+@media (max-width: 600px) {
+    .container {
+        padding: 0.5rem;
+        max-width: 100%;
+    }
+
+    nav a, nav button a {
+        margin: 0 0.5rem;
+    }
+
+    body {
+        font-size: 14px;
+    }
+
+    footer div {
+        flex-direction: column;
+    }
 }
