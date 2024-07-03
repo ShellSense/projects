@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erstellung eines bootfähigen USB-Sticks unter Linux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Erstellung eines bootfähigen USB-Sticks unter Linux</h1>
+        </div>
+        <nav>
+            <button><a href="index.html">Übersicht</a></button>
+            <button><a href="news.html">News</a></button>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <section>
+            <h2>Einführung</h2>
+            <p>Diese Anleitung beschreibt, wie man einen bootfähigen USB-Stick unter Linux mit minimalistischen Werkzeugen erstellt.</p>
+        </section>
+        
+        <section>
+            <h2>Schritt 1: USB-Stick einstecken und identifizieren</h2>
+            <p>Stecke den USB-Stick ein und identifiziere ihn mit dem Befehl <code>lsblk</code> oder <code>fdisk -l</code>. Notiere die Gerätename, z.B. <code>/dev/sdX</code>.</p>
+        </section>
+        
+        <section>
+            <h2>Schritt 2: USB-Stick formatieren</h2>
+            <p>Formatiere den USB-Stick mit dem Befehl <code><a href="mkfs.html">mkfs</a> -t vfat /dev/sdX1</a></code>. Stelle sicher, dass keine wichtigen Daten auf dem USB-Stick sind, da dieser Schritt alle Daten löscht.</p>
+        </section>
+        
+        <section>
+            <h2>Schritt 3: ISO-Image auf den USB-Stick schreiben</h2>
+            <p>Schreibe das <a href="iso-image.html">ISO-Image</a> auf den USB-Stick mit dem Befehl <code><a href="dd.html">dd</a> if=pfad/zur/iso-datei of=/dev/sdX bs=4M status=progress</code>. Ersetze <code>pfad/zur/iso-datei</code> durch den Pfad zum ISO-Image und <code>/dev/sdX</code> durch den Gerätename des USB-Sticks.</p>
+        </section>
+        
+        <section>
+            <h2>Schritt 4: Fertigstellung und Überprüfung</h2>
+            <p>Sobald der <a href="dd.html">dd</a>-Prozess abgeschlossen ist, sichere das Schreiben der Daten mit dem Befehl <code>sync</code>. Entferne den USB-Stick sicher mit <code>umount /dev/sdX</code>.</p>
+        </section>
+        
+        <section>
+            <h2>Zusammenfassung</h2>
+            <p>Mit diesen Schritten wurde erfolgreich ein bootfähiger USB-Stick unter Linux erstellt. Dieser kann nun verwendet werden, um ein Betriebssystem zu installieren oder ein Live-System zu starten.</p>
+        </section>
+    </main>
+
+    <hr />
+
+    <footer>
+        <p>Folge ShellSense auf:</p>
+        <div>
+            <button><a href="https://www.twitch.tv/ShellSense">Twitch</a></button>
+            <button><a href="https://www.youtube.com/@ShellSense">YouTube</a></button>
+            <button><a href="https://odysee.com/@ShellSense">Odysee</a></button>
+            <button><a href="https://github.com/ShellSense">GitHub</a></button>
+        </div>
+        <hr />
+    </footer>
+</body>
+</html>
